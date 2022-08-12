@@ -1,0 +1,15 @@
+{
+    "name": "Admin",
+    "alias": "admin",
+    "description": "관리자 기능을 활성화 합니다.",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Admin\\Providers\\AdminServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "Helpers/Helper.php"
+    ],
+    "requires": []
+}
