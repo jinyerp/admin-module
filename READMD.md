@@ -10,4 +10,12 @@ jinyERP 관리자 모듈입니다. 모듈을 설치하면 back-office 기능을 
 php atrisan module:geturl https://github.com/jinyerp/admin-module.git
 ```
 
+## 미들웨어
+
+관리자 페이지로 접근을 하기위해서는 2개의 미들웨어를 통과해야 합니다.
+* admin
+* super
+
+super 관리자는 회원의 `utype`이 SUPER 이어야 합니다.
+
 
