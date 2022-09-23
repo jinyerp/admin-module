@@ -22,8 +22,7 @@ class SuperAdminMiddleware
         if($user) {
             $myUser = DB::table('users')->where('email', $user->email)->first();
             if($myUser) {
-
-                if($myUser->isAdmin && $myUser->utype == "SUPER") {
+                if($myUser->isAdmin && $myUser->utype == "super") {
                     return $next($request);
                 } else {
                     // 접속할 수 있는 관리자 등급이 아닙니다.;
