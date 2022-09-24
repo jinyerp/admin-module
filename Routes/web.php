@@ -12,6 +12,9 @@ Route::middleware(['web','auth:sanctum', 'verified', 'admin', 'super'])
 ->name('admim')
 ->prefix($prefix)->group(function () {
     Route::get('/', [AdminDashboardController::class, 'index']);
+
+    //Route::get('/modules', [\Modules\Admin\Http\Controllers\AdminModuleController::class, 'index']);
+
 });
 
 
